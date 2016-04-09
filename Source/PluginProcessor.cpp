@@ -394,6 +394,8 @@ void MiditoOscAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffe
     
     midiMessages.swapWith (processedMidi);
     
+    buffer.clear();
+    
     for (int channel = 0; channel < getNumInputChannels(); ++channel)
     {
         float* channelData = 0;

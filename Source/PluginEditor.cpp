@@ -52,7 +52,7 @@ MiditoOscAudioProcessorEditor::MiditoOscAudioProcessorEditor (MiditoOscAudioProc
     glide->setColour (Slider::thumbColourId, Colour (0xff909eb4));
     glide->addListener (this);
     
-    addAndMakeVisible (labelPolyphony = new Label (String(), TRANS("Polyphony\n")));
+    addAndMakeVisible (labelPolyphony = new Label (String(), TRANS("Polyphony")));
     labelPolyphony->setFont (Font ("Futura", 14.00f, Font::plain));
     labelPolyphony->setJustificationType (Justification::centredLeft);
     labelPolyphony->setEditable (false, false, false);
@@ -84,7 +84,7 @@ MiditoOscAudioProcessorEditor::MiditoOscAudioProcessorEditor (MiditoOscAudioProc
     scaleSelect->addItem (TRANS("Calibration"), 9);
     scaleSelect->addListener (this);
     
-    addAndMakeVisible (labelScale = new Label (String(), TRANS("Scale\n")));
+    addAndMakeVisible (labelScale = new Label (String(), TRANS("Scale")));
     labelScale->setFont (Font ("Futura", 14.00f, Font::plain));
     labelScale->setJustificationType (Justification::centredLeft);
     labelScale->setEditable (false, false, false);
