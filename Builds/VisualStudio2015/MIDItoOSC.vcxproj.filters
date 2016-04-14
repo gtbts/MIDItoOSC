@@ -8,6 +8,15 @@
     <Filter Include="MIDItoOSC\Source">
       <UniqueIdentifier>{6CD8AC57-819A-1ED5-356D-B5E63F7B01A6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MIDItoOSC\Source\oscpack">
+      <UniqueIdentifier>{58937E17-BB6C-B93F-F579-DA606D9534AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MIDItoOSC\Source\oscpack\ip">
+      <UniqueIdentifier>{DC4AF885-0EED-F7C4-E90F-16388E31FDC3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MIDItoOSC\Source\oscpack\osc">
+      <UniqueIdentifier>{22C8CA2F-D86F-81E1-04C9-020DF04F46C6}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Juce Modules">
       <UniqueIdentifier>{422C46B7-0467-2DB0-BF3C-16DFCAFD69AC}</UniqueIdentifier>
     </Filter>
@@ -1626,6 +1635,45 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\oscpack\ip\IpEndpointName.h">
+      <Filter>MIDItoOSC\Source\oscpack\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\ip\NetworkingUtils.h">
+      <Filter>MIDItoOSC\Source\oscpack\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\ip\PacketListener.h">
+      <Filter>MIDItoOSC\Source\oscpack\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\ip\TimerListener.h">
+      <Filter>MIDItoOSC\Source\oscpack\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\ip\UdpSocket.h">
+      <Filter>MIDItoOSC\Source\oscpack\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\osc\MessageMappingOscPacketListener.h">
+      <Filter>MIDItoOSC\Source\oscpack\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscException.h">
+      <Filter>MIDItoOSC\Source\oscpack\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscHostEndianness.h">
+      <Filter>MIDItoOSC\Source\oscpack\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscOutboundPacketStream.h">
+      <Filter>MIDItoOSC\Source\oscpack\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscPacketListener.h">
+      <Filter>MIDItoOSC\Source\oscpack\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscPrintReceivedElements.h">
+      <Filter>MIDItoOSC\Source\oscpack\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscReceivedElements.h">
+      <Filter>MIDItoOSC\Source\oscpack\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscTypes.h">
+      <Filter>MIDItoOSC\Source\oscpack\osc</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\GUIComponent.h">
       <Filter>MIDItoOSC\Source</Filter>
     </ClInclude>

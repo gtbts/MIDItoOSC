@@ -1313,6 +1313,19 @@
     <ClCompile Include="..\..\..\..\Juce\juce-grapefruit-osx\modules\juce_audio_plugin_client\VST3\juce_VST3_Wrapper.cpp"/>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\oscpack\ip\IpEndpointName.h"/>
+    <ClInclude Include="..\..\Source\oscpack\ip\NetworkingUtils.h"/>
+    <ClInclude Include="..\..\Source\oscpack\ip\PacketListener.h"/>
+    <ClInclude Include="..\..\Source\oscpack\ip\TimerListener.h"/>
+    <ClInclude Include="..\..\Source\oscpack\ip\UdpSocket.h"/>
+    <ClInclude Include="..\..\Source\oscpack\osc\MessageMappingOscPacketListener.h"/>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscException.h"/>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscHostEndianness.h"/>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscOutboundPacketStream.h"/>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscPacketListener.h"/>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscPrintReceivedElements.h"/>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscReceivedElements.h"/>
+    <ClInclude Include="..\..\Source\oscpack\osc\OscTypes.h"/>
     <ClInclude Include="..\..\Source\GUIComponent.h"/>
     <ClInclude Include="..\..\Source\PluginProcessor.h"/>
     <ClInclude Include="..\..\Source\PluginEditor.h"/>

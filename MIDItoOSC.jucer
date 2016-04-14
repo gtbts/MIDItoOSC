@@ -13,6 +13,34 @@
               companyName="gtbts" pluginVSTCategory="">
   <MAINGROUP id="A8gfQN" name="MIDItoOSC">
     <GROUP id="{E8B6EA26-0B97-3DAB-0AF7-5E4FB1794ED6}" name="Source">
+      <GROUP id="{22D0A3E3-07DB-1DFC-ECC5-5817788DBF8B}" name="oscpack">
+        <GROUP id="{ECFD04BA-73FB-DB38-10FB-A7E51CD3E8C8}" name="ip">
+          <FILE id="xl5cC3" name="IpEndpointName.h" compile="0" resource="0"
+                file="Source/oscpack/ip/IpEndpointName.h"/>
+          <FILE id="u2tDrC" name="NetworkingUtils.h" compile="0" resource="0"
+                file="Source/oscpack/ip/NetworkingUtils.h"/>
+          <FILE id="nzk9PD" name="PacketListener.h" compile="0" resource="0"
+                file="Source/oscpack/ip/PacketListener.h"/>
+          <FILE id="mZEC8w" name="TimerListener.h" compile="0" resource="0" file="Source/oscpack/ip/TimerListener.h"/>
+          <FILE id="QGGOFs" name="UdpSocket.h" compile="0" resource="0" file="Source/oscpack/ip/UdpSocket.h"/>
+        </GROUP>
+        <GROUP id="{BDAE07EF-18A3-0BEA-0152-5858CAD639C6}" name="osc">
+          <FILE id="nTFNi1" name="MessageMappingOscPacketListener.h" compile="0"
+                resource="0" file="Source/oscpack/osc/MessageMappingOscPacketListener.h"/>
+          <FILE id="qod0AE" name="OscException.h" compile="0" resource="0" file="Source/oscpack/osc/OscException.h"/>
+          <FILE id="S19X9F" name="OscHostEndianness.h" compile="0" resource="0"
+                file="Source/oscpack/osc/OscHostEndianness.h"/>
+          <FILE id="QpqgmR" name="OscOutboundPacketStream.h" compile="0" resource="0"
+                file="Source/oscpack/osc/OscOutboundPacketStream.h"/>
+          <FILE id="sHY6qZ" name="OscPacketListener.h" compile="0" resource="0"
+                file="Source/oscpack/osc/OscPacketListener.h"/>
+          <FILE id="kQurmb" name="OscPrintReceivedElements.h" compile="0" resource="0"
+                file="Source/oscpack/osc/OscPrintReceivedElements.h"/>
+          <FILE id="fsPDvl" name="OscReceivedElements.h" compile="0" resource="0"
+                file="Source/oscpack/osc/OscReceivedElements.h"/>
+          <FILE id="Wo7bzR" name="OscTypes.h" compile="0" resource="0" file="Source/oscpack/osc/OscTypes.h"/>
+        </GROUP>
+      </GROUP>
       <FILE id="omxijs" name="GUIComponent.cpp" compile="0" resource="0"
             file="Source/GUIComponent.cpp"/>
       <FILE id="A2uCQc" name="GUIComponent.h" compile="0" resource="0" file="Source/GUIComponent.h"/>
