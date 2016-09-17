@@ -14,8 +14,8 @@
 #define IP_MTU_SIZE 1536
 
 #include "../JuceLibraryCode/JuceHeader.h"
-#include "UdpSocket.h"
-#include "OscOutboundPacketStream.h"
+#include "oscpack/ip/UdpSocket.h"
+#include "oscpack/osc/OscOutboundPacketStream.h"
 
 //==============================================================================
 /**

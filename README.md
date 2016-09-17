@@ -24,7 +24,7 @@ Likewise, convert MIDI Note ON/Off state to OSC message with address **/gate1** 
 
 ---
 The **Load Calibration Data** button is load a **_calibration data_** text file. The **_calibration data_** are made with **[OSCtoCV Calibrator](https://github.com/gtbts/OSCtoCV-Calibrator)**.
-If the calibration data have been successfully loaded, OSC **/fader1** ~ **/fader6** with **float** value is adjusted (quantized) musicals scale and you can choose several scale from **Scale** combo box to change **[mbed OSC to CV Converter](https://developer.mbed.org/users/casiotone401/code/OSCtoCVConverter/)** quantize scale with address **/ctrl4**.
+If the calibration data have been successfully loaded, OSC **/fader1** ~ **/fader6** with **float** value is adjusted (quantized) musical scale and you can choose several scale from **Scale** combo box to change **[mbed OSC to CV Converter](https://developer.mbed.org/users/casiotone401/code/OSCtoCVConverter/)** quantize scale with address **/ctrl4**.
 
 ### Mono Mode
 

@@ -4,15 +4,55 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MIDItoOSC.xcscheme</key>
+		<key>MIDItoOSC (AU).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>MIDItoOSC (All).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MIDItoOSC (Shared Code).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>MIDItoOSC (VST).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MIDItoOSC (VST3).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>25C8B8ABF429D23BC500A54B</key>
+		<key>24DB486E1B2667E5C6F6993E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7DD8437195D64A6BE8A3435F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B49B7E58DE51165DA7A60F94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA0CF0C914E1943821494F2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D97EF36649630E39BA3567C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

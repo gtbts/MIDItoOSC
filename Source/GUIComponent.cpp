@@ -1,17 +1,17 @@
 /*
   ==============================================================================
 
-  This is an automatically generated GUI class created by the Introjucer!
+  This is an automatically generated GUI class created by the Projucer!
 
   Be careful when adding custom code to these files, as only the code within
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Created with Introjucer version: 4.1.0
+  Created with Projucer version: 4.2.3
 
   ------------------------------------------------------------------------------
 
-  The Introjucer is part of the JUCE library - "Jules' Utility Class Extensions"
+  The Projucer is part of the JUCE library - "Jules' Utility Class Extensions"
   Copyright (c) 2015 - ROLI Ltd.
 
   ==============================================================================
@@ -111,7 +111,7 @@ GUIComponents::GUIComponents ()
     shiftButton->addListener (this);
     shiftButton->setColour (TextButton::buttonColourId, Colour (0xffadadad));
     shiftButton->setColour (TextButton::buttonOnColourId, Colour (0xffc4c4c4));
-    shiftButton->setColour (TextButton::textColourOnId, Colour (0xff363636));
+    shiftButton->setColour (TextButton::textColourOffId, Colour (0xff363636));
 
     addAndMakeVisible (labelMOSC = new Label (String(),
                                               TRANS("MIDI to OSC")));
@@ -127,14 +127,14 @@ GUIComponents::GUIComponents ()
     monoButton->addListener (this);
     monoButton->setColour (TextButton::buttonColourId, Colour (0xffadadad));
     monoButton->setColour (TextButton::buttonOnColourId, Colour (0xffc4c4c4));
-    monoButton->setColour (TextButton::textColourOnId, Colour (0xff363636));
+    monoButton->setColour (TextButton::textColourOffId, Colour (0xff363636));
 
     addAndMakeVisible (loadCalibButton = new TextButton ("loadCalib"));
     loadCalibButton->setButtonText (TRANS("Load Calibration Data"));
     loadCalibButton->addListener (this);
     loadCalibButton->setColour (TextButton::buttonColourId, Colour (0xffadadad));
     loadCalibButton->setColour (TextButton::buttonOnColourId, Colour (0xffc4c4c4));
-    loadCalibButton->setColour (TextButton::textColourOnId, Colour (0xff363636));
+    loadCalibButton->setColour (TextButton::textColourOffId, Colour (0xff363636));
 
 
     //[UserPreSize]
@@ -286,9 +286,9 @@ void GUIComponents::buttonClicked (Button* buttonThatWasClicked)
 
 //==============================================================================
 #if 0
-/*  -- Introjucer information section --
+/*  -- Projucer information section --
 
-    This is where the Introjucer stores the metadata that describe this GUI layout, so
+    This is where the Projucer stores the metadata that describe this GUI layout, so
     make changes in here at your peril!
 
 BEGIN_JUCER_METADATA
@@ -312,12 +312,13 @@ BEGIN_JUCER_METADATA
   <SLIDER name="Polyphony" id="80c9408b5df7114d" memberName="maxPoly" virtualName=""
           explicitFocusOrder="0" pos="69 34 185 24" thumbcol="ff909eb4"
           min="1" max="6" int="1" style="LinearHorizontal" textBoxPos="TextBoxLeft"
-          textBoxEditable="1" textBoxWidth="30" textBoxHeight="14" skewFactor="1"/>
+          textBoxEditable="1" textBoxWidth="30" textBoxHeight="14" skewFactor="1"
+          needsCallback="1"/>
   <SLIDER name="Glide" id="833687669baa14f4" memberName="glide" virtualName=""
           explicitFocusOrder="0" pos="69 60 185 24" thumbcol="ff909eb4"
           min="0" max="1" int="0.010000000000000000208" style="LinearHorizontal"
           textBoxPos="TextBoxLeft" textBoxEditable="1" textBoxWidth="30"
-          textBoxHeight="14" skewFactor="1"/>
+          textBoxHeight="14" skewFactor="1" needsCallback="1"/>
   <LABEL name="" id="e79c4111330a32e4" memberName="labelPolyphony" virtualName=""
          explicitFocusOrder="0" pos="5 35 72 20" textCol="ff363636" edTextCol="ff000000"
          edBkgCol="0" labelText="Polyphony&#10;" editableSingleClick="0"

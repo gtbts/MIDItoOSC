@@ -9,36 +9,50 @@
               pluginIsMidiEffectPlugin="0" pluginSilenceInIsSilenceOut="0"
               pluginEditorRequiresKeys="0" pluginAUExportPrefix="MIDItoOSCAU"
               pluginRTASCategory="" aaxIdentifier="com.yourcompany.MIDItoOSC"
-              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="4.1.0"
-              companyName="gtbts" pluginVSTCategory="">
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="4.2.3"
+              companyName="gtbts" pluginVSTCategory="" buildAUv3="0">
   <MAINGROUP id="A8gfQN" name="MIDItoOSC">
     <GROUP id="{E8B6EA26-0B97-3DAB-0AF7-5E4FB1794ED6}" name="Source">
       <GROUP id="{22D0A3E3-07DB-1DFC-ECC5-5817788DBF8B}" name="oscpack">
         <GROUP id="{ECFD04BA-73FB-DB38-10FB-A7E51CD3E8C8}" name="ip">
-          <FILE id="xl5cC3" name="IpEndpointName.h" compile="0" resource="0"
+          <GROUP id="{DC5048B5-B131-EDB4-76C1-5A1F3E606F72}" name="posix">
+            <FILE id="ji38s5" name="NetworkingUtils.cpp" compile="1" resource="0"
+                  file="Source/oscpack/ip/posix/NetworkingUtils.cpp"/>
+            <FILE id="fm3CqH" name="UdpSocket.cpp" compile="1" resource="0" file="Source/oscpack/ip/posix/UdpSocket.cpp"/>
+          </GROUP>
+          <FILE id="fJF7Qc" name="IpEndpointName.cpp" compile="1" resource="0"
+                file="Source/oscpack/ip/IpEndpointName.cpp"/>
+          <FILE id="UxJYpV" name="IpEndpointName.h" compile="0" resource="0"
                 file="Source/oscpack/ip/IpEndpointName.h"/>
-          <FILE id="u2tDrC" name="NetworkingUtils.h" compile="0" resource="0"
+          <FILE id="TCy6MY" name="NetworkingUtils.h" compile="0" resource="0"
                 file="Source/oscpack/ip/NetworkingUtils.h"/>
-          <FILE id="nzk9PD" name="PacketListener.h" compile="0" resource="0"
+          <FILE id="cISDpm" name="PacketListener.h" compile="0" resource="0"
                 file="Source/oscpack/ip/PacketListener.h"/>
-          <FILE id="mZEC8w" name="TimerListener.h" compile="0" resource="0" file="Source/oscpack/ip/TimerListener.h"/>
-          <FILE id="QGGOFs" name="UdpSocket.h" compile="0" resource="0" file="Source/oscpack/ip/UdpSocket.h"/>
+          <FILE id="fMIlsM" name="TimerListener.h" compile="0" resource="0" file="Source/oscpack/ip/TimerListener.h"/>
+          <FILE id="Jq6tSB" name="UdpSocket.h" compile="0" resource="0" file="Source/oscpack/ip/UdpSocket.h"/>
         </GROUP>
         <GROUP id="{BDAE07EF-18A3-0BEA-0152-5858CAD639C6}" name="osc">
-          <FILE id="nTFNi1" name="MessageMappingOscPacketListener.h" compile="0"
+          <FILE id="eYokom" name="MessageMappingOscPacketListener.h" compile="0"
                 resource="0" file="Source/oscpack/osc/MessageMappingOscPacketListener.h"/>
-          <FILE id="qod0AE" name="OscException.h" compile="0" resource="0" file="Source/oscpack/osc/OscException.h"/>
-          <FILE id="S19X9F" name="OscHostEndianness.h" compile="0" resource="0"
+          <FILE id="ug9wZQ" name="OscException.h" compile="0" resource="0" file="Source/oscpack/osc/OscException.h"/>
+          <FILE id="ZVFWSO" name="OscHostEndianness.h" compile="0" resource="0"
                 file="Source/oscpack/osc/OscHostEndianness.h"/>
-          <FILE id="QpqgmR" name="OscOutboundPacketStream.h" compile="0" resource="0"
+          <FILE id="vW8EB2" name="OscOutboundPacketStream.cpp" compile="1" resource="0"
+                file="Source/oscpack/osc/OscOutboundPacketStream.cpp"/>
+          <FILE id="s5zhCL" name="OscOutboundPacketStream.h" compile="0" resource="0"
                 file="Source/oscpack/osc/OscOutboundPacketStream.h"/>
-          <FILE id="sHY6qZ" name="OscPacketListener.h" compile="0" resource="0"
+          <FILE id="LhP3T1" name="OscPacketListener.h" compile="0" resource="0"
                 file="Source/oscpack/osc/OscPacketListener.h"/>
-          <FILE id="kQurmb" name="OscPrintReceivedElements.h" compile="0" resource="0"
+          <FILE id="ysj1iX" name="OscPrintReceivedElements.cpp" compile="1" resource="0"
+                file="Source/oscpack/osc/OscPrintReceivedElements.cpp"/>
+          <FILE id="p3J7n2" name="OscPrintReceivedElements.h" compile="0" resource="0"
                 file="Source/oscpack/osc/OscPrintReceivedElements.h"/>
-          <FILE id="fsPDvl" name="OscReceivedElements.h" compile="0" resource="0"
+          <FILE id="OaK2md" name="OscReceivedElements.cpp" compile="1" resource="0"
+                file="Source/oscpack/osc/OscReceivedElements.cpp"/>
+          <FILE id="gyH1HK" name="OscReceivedElements.h" compile="0" resource="0"
                 file="Source/oscpack/osc/OscReceivedElements.h"/>
-          <FILE id="Wo7bzR" name="OscTypes.h" compile="0" resource="0" file="Source/oscpack/osc/OscTypes.h"/>
+          <FILE id="tTl8du" name="OscTypes.cpp" compile="1" resource="0" file="Source/oscpack/osc/OscTypes.cpp"/>
+          <FILE id="Ca6R5Y" name="OscTypes.h" compile="0" resource="0" file="Source/oscpack/osc/OscTypes.h"/>
         </GROUP>
       </GROUP>
       <FILE id="omxijs" name="GUIComponent.cpp" compile="0" resource="0"
@@ -54,13 +68,13 @@
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
-    <XCODE_MAC targetFolder="Builds/MacOSX" postbuildCommand="&#13;&#10;# This script takes the build product and copies it to the AU, VST, VST3, RTAS and AAX folders, depending on &#13;&#10;# which plugin types you've built&#13;&#10;&#13;&#10;original=$CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME&#13;&#10;&#13;&#10;# this looks inside the binary to detect which platforms are needed.. &#13;&#10;copyAU=&#96;nm -g &quot;$CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH&quot; | grep -i 'AudioUnit' | wc -l&#96;&#13;&#10;copyVST=&#96;nm -g &quot;$CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH&quot; | grep -i 'VSTPlugin' | wc -l&#96;&#13;&#10;copyVST3=&#96;nm -g &quot;$CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH&quot; | grep -i 'GetPluginFactory' | wc -l&#96;&#13;&#10;copyRTAS=&#96;nm -g &quot;$CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH&quot; | grep -i 'CProcess' | wc -l&#96;&#13;&#10;copyAAX=&#96;nm -g &quot;$CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH&quot; | grep -i 'ACFStartup' | wc -l&#96;&#13;&#10;&#13;&#10;if [ $copyAU -gt 0 ]; then&#13;&#10;  echo &quot;Copying to AudioUnit folder...&quot;&#13;&#10;  AUDir=~/Library/Audio/Plug-Ins/Components&#13;&#10;  mkdir -p &quot;$AUDir&quot;&#13;&#10;  AU=$AUDir/$PRODUCT_NAME.component&#13;&#10;  if [ -d &quot;$AU&quot; ]; then &#13;&#10;    rm -r &quot;$AU&quot;&#13;&#10;  fi&#13;&#10;&#13;&#10;  cp -r &quot;$original&quot; &quot;$AU&quot;&#13;&#10;  sed -i &quot;&quot; -e 's/TDMwPTul/BNDLPTul/g' &quot;$AU/Contents/PkgInfo&quot;&#13;&#10;  sed -i &quot;&quot; -e 's/TDMw/BNDL/g' &quot;$AU/Contents/$INFOPLIST_FILE&quot;&#13;&#10;fi&#13;&#10;&#13;&#10;if [ $copyVST -gt 0 ]; then&#13;&#10;  echo &quot;Copying to VST folder...&quot;&#13;&#10;  VSTDir=~/Library/Audio/Plug-Ins/VST&#13;&#10;  mkdir -p &quot;$VSTDir&quot;&#13;&#10;  VST=$VSTDir/$PRODUCT_NAME.vst&#13;&#10;  if [ -d &quot;$VST&quot; ]; then &#13;&#10;    rm -r &quot;$VST&quot;&#13;&#10;  fi&#13;&#10;&#13;&#10;  cp -r &quot;$original&quot; &quot;$VST&quot;&#13;&#10;  sed -i &quot;&quot; -e 's/TDMwPTul/BNDLPTul/g' &quot;$VST/Contents/PkgInfo&quot;&#13;&#10;  sed -i &quot;&quot; -e 's/TDMw/BNDL/g' &quot;$VST/Contents/$INFOPLIST_FILE&quot;&#13;&#10;fi&#13;&#10;&#13;&#10;if [ $copyVST3 -gt 0 ]; then&#13;&#10;  echo &quot;Copying to VST3 folder...&quot;&#13;&#10;  VST3Dir=~/Library/Audio/Plug-Ins/VST3&#13;&#10;  mkdir -p &quot;$VST3Dir&quot;&#13;&#10;  VST3=$VST3Dir/$PRODUCT_NAME.vst3&#13;&#10;  if [ -d &quot;$VST3&quot; ]; then &#13;&#10;    rm -r &quot;$VST3&quot;&#13;&#10;  fi&#13;&#10;&#13;&#10;  cp -r &quot;$original&quot; &quot;$VST3&quot;&#13;&#10;  sed -i &quot;&quot; -e 's/TDMwPTul/BNDLPTul/g' &quot;$VST3/Contents/PkgInfo&quot;&#13;&#10;  sed -i &quot;&quot; -e 's/TDMw/BNDL/g' &quot;$VST3/Contents/$INFOPLIST_FILE&quot;&#13;&#10;fi&#13;&#10;&#13;&#10;if [ $copyRTAS -gt 0 ]; then&#13;&#10;  echo &quot;Copying to RTAS folder...&quot;&#13;&#10;  RTASDir=/Library/Application\ Support/Digidesign/Plug-Ins&#13;&#10;  if [ -d &quot;$RTASDir&quot; ]; then&#13;&#10;    RTAS=$RTASDir/$PRODUCT_NAME.dpm&#13;&#10;    if [ -d &quot;$RTAS&quot; ]; then&#13;&#10;      rm -r &quot;$RTAS&quot;&#13;&#10;    fi&#13;&#10;&#13;&#10;    cp -r &quot;$original&quot; &quot;$RTAS&quot;&#13;&#10;  fi&#13;&#10;fi&#13;&#10;&#13;&#10;if [ $copyAAX -gt 0 ]; then&#13;&#10;  echo &quot;Copying to AAX folder...&quot;&#13;&#10;&#13;&#10;  if [ -d &quot;/Applications/ProTools_3PDev/Plug-Ins&quot; ]; then&#13;&#10;    AAX1=&quot;/Applications/ProTools_3PDev/Plug-Ins/$PRODUCT_NAME.aaxplugin&quot;&#13;&#10;&#13;&#10;    if [ -d &quot;$AAX1&quot; ]; then&#13;&#10;      rm -r &quot;$AAX1&quot;&#13;&#10;    fi&#13;&#10;&#13;&#10;    cp -R -H &quot;$original&quot; &quot;$AAX1&quot;&#13;&#10;  fi&#13;&#10;&#13;&#10;  if [ -d &quot;/Library/Application Support/Avid/Audio/Plug-Ins&quot; ]; then&#13;&#10;    AAX2=&quot;/Library/Application Support/Avid/Audio/Plug-Ins/$PRODUCT_NAME.aaxplugin&quot;&#13;&#10;&#13;&#10;    if [ -d &quot;$AAX2&quot; ]; then&#13;&#10;      rm -r &quot;$AAX2&quot;&#13;&#10;    fi&#13;&#10;&#13;&#10;    cp -R -H &quot;$original&quot; &quot;$AAX2&quot;&#13;&#10;  fi&#13;&#10;fi&#13;&#10;"
-               vstFolder="~/Dropbox/Code/SDK/vstsdk2.4" vst3Folder="~/Dropbox/Code/SDK/VST3 SDK">
+    <XCODE_MAC targetFolder="Builds/MacOSX" postbuildCommand="" vstFolder="~/Dropbox/Code/SDK/vstsdk2.4"
+               vst3Folder="~/Dropbox/Code/SDK/VST3 SDK" externalLibraries="">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
-                       isDebug="1" optimisation="1" targetName="MIDItoOSC"/>
+                       isDebug="1" optimisation="1" targetName="MIDItoOSC" headerPath=""/>
         <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
-                       isDebug="0" optimisation="3" targetName="MIDItoOSC"/>
+                       isDebug="0" optimisation="3" targetName="MIDItoOSC" headerPath=""/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_core" path="../../Juce/juce-grapefruit-osx/modules"/>
@@ -70,7 +84,6 @@
         <MODULEPATH id="juce_gui_basics" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_gui_extra" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_cryptography" path="../../Juce/juce-grapefruit-osx/modules"/>
-        <MODULEPATH id="juce_video" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_opengl" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_audio_basics" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_audio_devices" path="../../Juce/juce-grapefruit-osx/modules"/>
@@ -94,7 +107,6 @@
         <MODULEPATH id="juce_gui_basics" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_gui_extra" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_cryptography" path="../../Juce/juce-grapefruit-osx/modules"/>
-        <MODULEPATH id="juce_video" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_opengl" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_audio_basics" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_audio_devices" path="../../Juce/juce-grapefruit-osx/modules"/>
@@ -118,7 +130,6 @@
         <MODULEPATH id="juce_gui_basics" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_gui_extra" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_cryptography" path="../../Juce/juce-grapefruit-osx/modules"/>
-        <MODULEPATH id="juce_video" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_opengl" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_audio_basics" path="../../Juce/juce-grapefruit-osx/modules"/>
         <MODULEPATH id="juce_audio_devices" path="../../Juce/juce-grapefruit-osx/modules"/>
@@ -142,7 +153,9 @@
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
-    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
   </MODULES>
   <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+  <LIVE_SETTINGS>
+    <OSX headerPath="/Users/instrmntl/Dropbox/Code/VST/MIDItoOSC/Builds/MacOSX/oscpack"/>
+  </LIVE_SETTINGS>
 </JUCERPROJECT>
